@@ -33,7 +33,7 @@ public class Range {
 
     public Range getIntersection(double from, double to) {
         if (from < this.to && to > this.from) {
-            return new Range(Math.max(from, this.from), Math.min(to, this.to));
+            return new Range(Math.max(this.from,from), Math.min(this.to, to));
         }
 
         return null;

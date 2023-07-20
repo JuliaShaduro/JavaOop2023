@@ -37,7 +37,7 @@ public class Program {
         Range[] arrayunificationRange = range.getUnification(from, to);
 
         for (Range e : arrayunificationRange) {
-            System.out.println("Объединения двух интервалов = " + e.getFrom() + " ; " + e.getTo());
+            System.out.println("Объединение двух интервалов = " + e.getFrom() + " ; " + e.getTo());
         }
 
         Range[] arrayDifference = range.getDifference(from, to);
